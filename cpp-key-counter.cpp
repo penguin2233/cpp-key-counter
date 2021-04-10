@@ -35,10 +35,10 @@ void print() {
 	cursorInfo.bVisible = FALSE;
 	SetConsoleCursorInfo(hConsole, &cursorInfo);
 	while (counting) {
-		std::cout << "" << q << '\n';
-		std::cout << "" << e << '\n';
-		std::cout << "" << r << '\n';
-		std::cout << "" << f;
+		std::cout << "primary" << q << '\n';
+		std::cout << "secondary" << e << '\n';
+		std::cout << "melee" << r << '\n';
+		std::cout << "pda" << f;
 		SetConsoleCursorPosition(hConsole, coord);
 	}
 	return;
